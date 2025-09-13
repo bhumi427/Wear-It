@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #f7f8fa, #e2e6ea);
+}
+.header-top h1{
+    color: rgb(47, 59, 84);
+   /* text-align: center; */
+    height:90px;
+    margin-top:-10px;
+    padding-top: 28px;
+    padding-left: 50px;
+    
+    /* font-size: larger; */
+     background-color: #cfd5df; 
+    font-family: 'Pacifico', cursive;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.header-top h4{
+    font-size:10px;
+    font-family: 'Pacifico', cursive;
+    margin-top:-70px;
+    margin-left: 110px;
+    color: rgb(47, 59, 84);
+
+}
+.nav-bar{
+    display: flex;
+    padding-left:300px;
+    padding-right:30px;
+    margin-top: -50px;
+    gap:32px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(47, 59, 84);
+     /* background: linear-gradient(top bottom, #f7f8fa, #e2e6ea); */ */
+
+}
+.search-bar input{
+    margin-top: 20px;
+    padding:2px;
+    border-radius:20px;
+    font-family: 'Pacifico', cursive;
+}
+.liked-ele h3{
+    margin-top:10px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
