@@ -1,36 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wear It</title>
-    <link rel="stylesheet" href="homecss.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wear It</title>
+  <link rel="stylesheet" href="homecss.css">
 </head>
 <body>
-   <div class="header" > 
-        <div class="header-top">
-        <h1>Wear It</h1>
-       <h4> - Finding your best fits</h4> 
+  <div class="header"> 
+    <div class="header-top">
+      <h1>Wear It</h1>
     </div> 
+
     <div class="nav-bar">
-        <h3 href="#">Home</h3>
-        <h3>Mens</h3>
-        <h3>Womens</h3>
-        <h3>Kids</h3>
-         <div class="liked-ele">
-        <h3> 💌 </h3>
-         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="🔍Search...">
-        </div>
-        <h3>Cart</h3>
-        <h3>Wallet</h3>
-        <h3>profile</h3>
+      <h3>Home</h3>
+      <h3>Shop</h3>
+      <div class="liked-ele"><h3>💌</h3></div>
+      <div class="search-bar">
+        <input type="text" placeholder="🔍 Search...">
+      </div>
+      <h3>Cart</h3>
+      <h3>Wallet</h3>
+      <h3>Profile</h3>
     </div>
-    <div class="image-bar">
-        <img src="cloths.jpg">Cloths</img>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="./images/banner.jpg" alt="Clothing Banner">
+    <div class="hero-content">
+      <h2>"Fashion is the armor to survive the reality of everyday life."</h2>
+      <div class="hero-buttons">
+        <button class="btn start-btn">Start Shopping</button>
+        <button class="btn saved-btn">View Your Saved ❤️</button>
+      </div>
     </div>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="section categories">
+  <h2>Categories</h2>
+  <div class="card-container full-width">
+    <div class="card">
+      <div class="card-img">
+        <img src="./images/men-category.jpg" alt="Men">
+      </div>
+      <p class="label">Men</p>
     </div>
-       
+    <div class="card">
+      <div class="card-img">
+        <img src="./images/women-category.jpg" alt="Women">
+      </div>
+      <p class="label">Women</p>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="./images/kids-category.jpg" alt="Kids">
+      </div>
+      <p class="label">Kids</p>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="./images/accessories-category.jpg" alt="Accessories">
+      </div>
+      <p class="label">Accessories</p>
+    </div>
+  </div>
+</div>
+
+<!-- Info Section Above Footer -->
+<div class="info-section">
+  <button class="accordion">About Us</button>
+  <div class="panel">
+    <p>We are Wear-It, your trusted clothing swap and shopping hub. Our mission is to provide sustainable and stylish clothing choices for everyone.</p>
+  </div>
+
+  <button class="accordion">Contact Us</button>
+  <div class="panel">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="query">Query:</label>
+      <textarea id="query" name="query" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <button class="accordion">Privacy Policy</button>
+  <div class="panel">
+    <p>We value your privacy. Your data is stored securely and will never be shared with third parties without your consent.</p>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-copy">&copy; 2025 Wear It. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="home.js"></script>
 </body>
+
 </html>
