@@ -1,0 +1,94 @@
+body {
+      font-family: 'Pacifico', cursive;
+      margin: 0;
+      padding: 0;
+      background: #c5b3af;
+    }
+    
+.header h1 {
+  color: rgb(47, 59, 84);
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f6f5;
+  padding: 20px 50px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(47, 59, 84);
+  font-size: 14px;
+  background: none; /* removed extra background */
+  margin: top -10px;
+  margin-bottom: -20px;
+  padding: 0; /* reset */
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: 'Pacifico', cursive;
+  border: 1px solid #ccc;
+}
+
+.liked-ele h3 {
+  font-size: 22px;
+  margin: 0;
+}
+.head {
+      text-align: center;
+      /* padding: 10px; */
+      padding-left: 25px;
+      font-size: 19px;
+      /* background: #9e827f; */
+      color: rgb(18, 16, 16);
+    }
+
+    .category {
+      margin: 40px;
+    }
+
+    .category h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #151414;
+    }
+    .products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  justify-items: center; /* center the fixed-size boxes */
+}
+
+.product-box {
+  background: white;
+  width: 280px;   /* fixed width */
+  height: 260px;  /* fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;   /* crops the image inside */
+  border-radius: 20px;
+}
+
+.product-box:hover {
+  transform: scale(1.10);
+  cursor: pointer;
+}

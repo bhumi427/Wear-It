@@ -11,3 +11,7 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);

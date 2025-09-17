@@ -3,52 +3,56 @@ body {
     height: 100vh;
     background: linear-gradient(to right, #f7f8fa, #e2e6ea);
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f6f5;
+  padding: 20px 50px;
+}
 
-.header-top h1 {
-    color: rgb(47, 59, 84);
-    height:90px;
-    margin-top:-10px;
-    padding-top: 28px;
-    padding-left: 50px;
-    background: #f8f6f5; 
-    font-family: 'Pacifico', cursive;
+.header h1 {
+  color: rgb(47, 59, 84);
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  margin: 0;
 }
 
 .nav-bar {
-    display: flex;
-    padding-left:630px;
-    padding-right:30px;
-    margin-top: -100px;
-    margin-bottom: -20px;
-    top: 10px;
-    gap:20px;
-    font-family: 'Pacifico', cursive;
-     color: rgb(47, 59, 84);
-    background: #f9f8f7;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(47, 59, 84);
+  font-size: 14px;
+  background: none; /* removed extra background */
+  margin: top -10px;
+  margin-bottom: -20px;
+  padding: 0; /* reset */
+}
 
-}
 .search-bar input {
-    margin-top: 20px;
-    padding:2px;
-    border-radius:20px;
-    font-family: 'Pacifico', cursive;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: 'Pacifico', cursive;
+  border: 1px solid #ccc;
 }
+
 .liked-ele h3 {
-    margin-top:10px;
-    font-size: 30px;
-    font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  margin: 0;
 }
 
 .section {
     margin: 40px 20px;
 }
 .section h2 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 24px;
     font-family: 'Pacifico', cursive;
     text-align: center;
     color: rgb(47, 59, 84);
+    margin-top:-20px;
 }
 
 .card-container {
@@ -247,4 +251,7 @@ body {
 
 .panel button:hover {
   background-color: #704122;
+}
+html{
+  scroll-behavior: smooth;
 }
